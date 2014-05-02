@@ -1,3 +1,3 @@
 Cartoffelium
 ====
-A MUD with fatasy theme.
+A MUD with fantasy theme.

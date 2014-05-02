@@ -5,7 +5,9 @@ import cartoffelium.util.Describable;
 public abstract class Entity extends Describable
 {
 
-	public int health = 0, mana = 0, energy = 0;
+	public int health = 100, mana = 100, energy = 100;
+	public int mhealth = 100, mmana = 100, menergy = 100;
+	public int hregen = 1, mregen = 1, eregen = 1;
 	public int strength = 0, intelligence = 0, wisdom = 0, stamina = 0,
 			dexterity = 0;
 
@@ -23,9 +25,9 @@ public abstract class Entity extends Describable
 			int intelligence, int wisdom, int stamina, int dexterity)
 	{
 		super();
-		this.health = health;
-		this.mana = mana;
-		this.energy = energy;
+		this.mhealth = this.health = health;
+		this.mmana = this.mana = mana;
+		this.menergy = this.energy = energy;
 		this.strength = strength;
 		this.intelligence = intelligence;
 		this.wisdom = wisdom;
@@ -38,9 +40,9 @@ public abstract class Entity extends Describable
 			int stamina, int dexterity)
 	{
 		super(name, description);
-		this.health = health;
-		this.mana = mana;
-		this.energy = energy;
+		this.mhealth = this.health = health;
+		this.mmana = this.mana = mana;
+		this.menergy = this.energy = energy;
 		this.strength = strength;
 		this.intelligence = intelligence;
 		this.wisdom = wisdom;

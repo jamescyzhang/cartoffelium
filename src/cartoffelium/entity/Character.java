@@ -5,6 +5,8 @@ public abstract class Character extends Entity
 	
 	public int race = Race.NA_CAT;
 	public int cls = Class.WARRIOR;
+	
+	public int level;
 
 	public Character()
 	{
@@ -51,6 +53,9 @@ public abstract class Character extends Entity
 		Class.endow(this, cls);
 	}
 	
-	
+	public void levelUp()
+	{
+		Class.endow(this, cls);
+	}
 
 }
